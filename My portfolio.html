@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My portfolio</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&family=Italianno&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+        }
+
+
+
+        .buttons {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+
+        .buttons a {
+            text-decoration: none;
+            color: #141414;
+            border: 2px solid #141414;
+            padding: 3.5px 10px;
+            border-radius: 4px;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .buttons a:hover {
+            text-decoration: none;
+            color: white;
+            background-color: #141414;
+            transition: 0.5s;
+            cursor: pointer
+        }
+
+        .carousel {
+            height: 733px;
+
+        }
+
+        .carousel .carousel-item {
+            width: 550px;
+            margin-top: -150px;
+        }
+
+        h2 {
+            text-align: center;
+            width: 100%;
+            margin: 0px auto;
+            font-size: 80px;
+            letter-spacing: 5px;
+            top: 50%;
+            margin-top: 73px;
+            font-family: 'Baloo Tamma', cursive;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="row justify-content-around buttons">
+        <a href="index.html">Повернення назад</a>
+    </div>
+    <h2>My Project</h2>
+    <div class="carousel">
+        <a href="home.html" target="_blank" class="carousel-item">
+            <img src="img/1.jpg" alt="">
+        </a>
+        <a href="#two" class="carousel-item">
+            <img src="img/coming-soon.jpg" alt="">
+        </a>
+        <a href="#three" class="carousel-item">
+            <img src="img/coming-soon.jpg" alt="">
+        </a>
+        <a href="#four" class="carousel-item">
+            <img src="img/coming-soon.jpg" alt="">
+        </a>
+        <a href="#five" class="carousel-item">
+            <img src="img/coming-soon.jpg" alt="">
+        </a>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                indicators: true
+            });
+        });
+
+    </script>
+</body>
+
+</html>

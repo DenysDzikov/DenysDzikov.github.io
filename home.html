@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>FAX.VPN</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <div id="header">
+        <nav class="navbar navbar-default" id="navigation-purple">
+            <div class="container">
+
+                <a href="home.html"><img class="img-responsive img-circle avatar" src="img/logo.png" alt="Avatar"></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="lists.html">WHAT IS CIPHER CAESAR?</a></li>
+                        <li><a href="support.html">SUPPORT</a></li>
+
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row justify-content xxx">
+            <div class="col-xs-1 col-md-4">
+                <div id="encrypt-block">
+                    <h3>Введіть текст: </h3>
+                    <textarea name="user-text" id="text-to-work" cols="40" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="col-xs-1 col-md-4">
+                <br><br>
+                <h3>Крок:</h3>
+                <select class="selectpicker show-tick" name="user_step" id="encrypt-step" size="1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option selected>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                </select>
+                <br> <br>
+                <div class="form-group">
+                    <button class="btn btn-primary" id="encrypt-btn">Зашифрувати</button>
+                    <button class="btn btn-primary" id="decrypt-btn">Дешифрувати</button>
+                    <button class="btn btn-danger" id="btn-reset">Очистити</button>
+                </div>
+            </div>
+            <div class="col-xs-1 col-md-4">
+                <h3>Результат:</h3>
+                <textarea readonly id="output" cols="40" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <! -- animation -->
+        <div class="waveWrapper waveAnimation">
+            <div class="waveWrapperInner bgTop">
+                <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+                <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+            </div>
+        </div>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
