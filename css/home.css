@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*app panel */
+#navigation-purple {
+    padding-bottom: 0px;
+    margin: 0;
+    background-color: #7a60e9;
+    border: none;
+    border-radius: 0;
+}
+
+#navigation-purple .nav {
+    margin-left: -15px;
+}
+
+#navigation-purple .nav > li {
+    border-bottom: 2px solid transparent;
+    margin-bottom: 34px;
+}
+
+#navigation-purple .nav > li:hover {
+    border-bottom-color: #fff;
+}
+
+#navigation-purple .nav > li:focus {
+    background-color: transparent;
+}
+
+#navigation-purple .nav > li > a {
+    font-size: 18px;
+    color: white;
+}
+
+#navigation-purple .nav > li > a:hover,
+#navigation-purple .nav > li > a:focus {
+    background-color: transparent;
+}
+
+#navigation-purple .navbar-collapse {
+    padding-top: 35px;
+}
+
+#navigation-purple .avatar {
+    height: 80px;
+    float: right;
+    margin-top: 19px;
+}
+
+#navigation-purple .icon-bar {
+    background-color: white;
+}
+
+#navigation-purple .navbar-toggle {
+    border-color: white;
+    float: left;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+#navigation-purple .navbar-toggle:hover,
+#navigation-purple .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+/*logo*/
+@media screen and (max-width: 767px) {
+
+    #navigation-purple .navbar-collapse {
+        padding-top: 0;
+    }
+
+    #navigation-purple ul > li {
+        float: left;
+        clear: left;
+        margin-left: 4px;
+        padding-bottom: 8px;
+        margin-bottom: 5px !important;
+    }
+
+    #navigation-purple ul > li > a {
+        padding-bottom: 2px;
+    }
+
+    #navigation-purple ul > li:hover {
+        border-bottom: 2px solid white;
+    }
+
+    #navigation-purple .avatar {
+        height: 60px;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+}
+
+body {
+    background-color: #171c3d;
+}
+
+
+/*animation doppler*/
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    margin-top: 77vh
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40vh;
+    height: 100%;
+    bottom: -1vh;
+    background-image: linear-gradient(to top, #86377b 10%, #171c3d 90%);
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: move-wave 3s;
+    -webkit-animation: move-wave 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+.xxx {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+
+#output {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+    width: 325px;
+    height: 160px; 
+    background-color: floralwhite;
+}
+
+@media only screen and (max-width: 1200px) {
+    .waveWrapper {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .xxx {
+        display: grid;
+    }
+
+}
+
+h3 {
+    color: white;
+}
