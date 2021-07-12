@@ -4,6 +4,10 @@
      box-sizing: border-box;
  }
 
+body {
+    background-color: #171c3d;
+}
+
  .supp{
      height: 75vh;
      display: flex;
